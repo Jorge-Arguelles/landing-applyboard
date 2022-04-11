@@ -1,0 +1,329 @@
+@import 'fonts.css';
+@import 'colors.css';
+
+
+/* ==============================================================
+/*	GENERAL
+/* ============================================================== */
+	.muli {
+		font-family: 'Muli';
+	}
+
+	.ls-2px {
+		letter-spacing: 2px;
+	}
+
+	.fs-12 {
+		font-size: 12px;
+	}
+	.fs-15 {
+		font-size: 15px;
+	}
+	.fs-18 {
+		font-size: 18px;
+	}
+	.fs-20 {
+		font-size: 20px;
+	}
+
+	.lh-22 {
+		line-height: 22px;
+	}
+	.lh-28 {
+		line-height: 28px;
+	}
+	.lh-1em {
+		line-height: 1em;
+	}
+
+	.fw-400 {
+		font-weight: 400;
+	}
+	.fw-500 {
+		font-weight: 500;
+	}
+	.fw-600 {
+		font-weight: 600;
+	}
+	.fw-700 {
+		font-weight: 700;
+	}
+
+	body {
+		font-family: 'Work Sans';
+		font-size: 16px;
+		line-height: normal;
+	}
+
+/* ==============================================================
+/*	BANNER
+/* ============================================================== */
+	#banner {
+		height: 719px;
+		background: url('../images/estudiar-en-el-extranjero-background.jpg');
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: cover;
+	}
+
+	#banner h1 {
+		font-size: 60px;
+		line-height: 85px;
+		font-family: "Work Sans";
+		letter-spacing: -5px;
+		color: rgb(255, 255, 255);
+		font-style: normal;
+		font-weight: 600;
+	}
+	#banner h1 span {
+		background-color: rgba(0, 100, 225, 0.51);
+		padding: 0 .5rem;
+	}
+	#banner img {
+		width: 235px;
+	}
+
+	@media only screen and (max-width: 768px) {
+		#banner {
+			background: url('../images/estudiar-en-el-extranjero-background-movile.jpg');
+			background-repeat: no-repeat;
+			background-position: left center;
+			background-size: cover;
+		}
+	}
+
+	@media only screen and (max-width: 576px) {
+		#banner {
+			height: 594px;
+		}
+
+		#banner h1 {
+			font-size: 40px;
+			line-height: 65px;
+			margin-bottom: 150px;
+		}
+	}
+
+
+/* ==============================================================
+/*	FORM
+/* ============================================================== */
+	.form-node {
+		display: flex;
+		margin: 1rem;
+	}
+	.form-node-image {
+		margin-right: 2rem;
+	}
+	.form-node-text {
+		font-size: 15px;
+		line-height: 22px;
+		font-family: Muli;
+		color: rgb(21, 47, 46);
+		font-style: normal;
+		font-weight: 400;
+	}
+	.form-node-title {
+		font-size: 20px;
+		line-height: 1em;
+		font-family: "Work Sans";
+		color: rgb(0, 100, 225);
+		font-style: normal;
+		font-weight: 600;
+	}
+
+	#form-wrapper {
+		background: #0064e1;
+		color: #fff;
+		padding: 3rem 1rem;
+		bottom: 0;
+		left: 0;
+		position: absolute;
+	}
+
+	form {
+		padding: 1rem 2rem;
+	}
+	form input, form select {
+		height: 46px;
+	}
+	form button[type="submit"] {
+		border-style: none;
+		border-radius: 5px;
+		width: 100%;
+		height: 55px;
+		background: rgba(0,194,197,1);
+		color: #fff;
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: 600;
+		font-family: Work Sans;
+		font-style: normal;
+		text-align: center;
+	}
+	form button[type="submit"]:hover {
+		background: rgba(0,184,187,1);
+		box-shadow: none;
+		color: #fff;
+	}
+
+	@media only screen and (max-width: 767px) {
+		#form-wrapper {
+			position: relative;
+			transform: translate(0px, -50px);
+		}
+	}
+
+
+/* ==============================================================
+/*	AREAS
+/* ============================================================== */
+	#areas h2 {
+		font-size: 48px;
+	}
+
+	#areas {
+		background: url('../images/apb-backround.jpg');
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: cover;
+		height: 450px;
+	}
+
+	@media only screen and (max-width: 991px) {
+		#areas {
+			box-shadow: inset 0 0 0 2000px rgb(255 255 255 / 75%);
+		}
+	}
+
+
+/* ==============================================================
+/*	TESTIMONIALS
+/* ============================================================== */
+	#testimonials {
+		background: url('../images/parallax-background.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		/* height: 621px; */
+		padding: 6rem 0;
+		box-shadow:inset 0 0 0 2000px rgba(0,100,225,0.23);
+	}
+
+	.testimonial-card {
+		width: 440px;
+		min-height: 355px;
+		padding: 1rem;
+		margin: 1rem;
+
+		background: #0064e1;
+		color: #fff;
+
+		font-size: 20px;
+		line-height: 1em;
+		font-family: Muli;
+		font-style: italic;
+		font-weight: 400;
+	}
+
+	.testimonial-card-stars {
+		margin-bottom: 1rem;
+	}
+	.testimonial-card-stars img {
+		width: 112px;
+	}
+
+	.testimonial-card-text {
+		font-size: 20px;
+		line-height: 31px;
+		font-family: Muli;
+		color: #fff;
+		font-style: italic;
+		font-weight: 400;
+	}
+
+	.testimonial-card-footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.testimonial-card-footer img {
+		margin-right: 1rem;
+	}
+
+	@media only screen and (max-width: 576px) {
+		.testimonial-card {
+			width: 100%;
+		}
+	}
+
+
+/* ==============================================================
+/*	REASONS
+/* ============================================================== */
+	#reasons h2 {
+		font-size: 48px;
+		line-height: 1em;
+		color: rgb(0, 100, 225);
+		font-style: normal;
+		font-weight: 600;
+		text-align: center;
+		margin: 3rem 0;
+	}
+
+	.reason-card {
+		width: 300px;
+		margin: .5rem;
+	}
+	.reason-card-image	{
+		margin-bottom: 1rem;
+	}
+	.reason-card-title h4 {
+		font-size: 18px;
+		line-height: 1em;
+		color: rgb(21, 47, 46);
+		font-style: normal;
+		font-weight: 600;
+		min-height: 58px;
+	}
+
+	@media only screen and (max-width: 576px) {
+		.reason-card {
+			width: 100%;
+		}
+	}
+
+
+/* ==============================================================
+/*	APPLYBOARD
+/* ============================================================== */
+	#applyboard {
+		padding: 8rem 0;
+	}
+
+	@media only screen and (max-width: 768px) {
+		#applyboard {
+			padding: 4rem 0;
+		}
+	}
+
+	@media only screen and (max-width: 576px) {
+		#applyboard {
+			padding: 0rem 0;
+		}
+	}
+
+
+/* ==============================================================
+/*	FOOTER
+/* ============================================================== */
+	footer {
+		background: #0064e1;
+		padding: 3rem 0 1rem 0;
+	}
+
+	footer a,
+	footer a:hover {
+		color: #c7c7c7;
+	}
