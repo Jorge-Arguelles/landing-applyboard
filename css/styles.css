@@ -159,7 +159,7 @@
 		padding: 3rem 1rem;
 		bottom: 0;
 		left: 0;
-		position: relative;
+		position: absolute;
 	}
 
 	form {
